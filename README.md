@@ -5,7 +5,7 @@ In this analysis we use neural networks to analyze and classify the success of c
 
 ## Results 
 
-**model features :**  APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT<br><br>
+**model features :**  APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, SPECIAL_CONSIDERATIONS<br><br>
 **model target :** IS_SUCCESFUL<br><br>
 **dropped columns :** 'EIN' and 'NAME' are neither features or targets and therefore removed from the data.
 
@@ -49,7 +49,7 @@ Loss: 0.587
 Accuracy: 0.7059
 
 # Summary
-For all models tested, Loss was over steadily over 0.50 and accuracy stuck close to 0.71. More hidden layers and more neurons did not provide us with any significant results. On the contrary, a small number of layers featuring a small number of neurons turned out to be as accurate and slightly faster than our more complex models. This possibly signifies there is much more work to be done in reprocessing. The removal of the extra columns in optimization did not contribute to better results. Shuffling the activation functions did not result to much either. Hyperparameters appear to be irrelevant to our performance results and focus should shift to preprocessing.  Before going back to the drawing table to build new neural networks I would recommend attempting to achieve better performance with the Balanced Random Forest Classifier as we are dealing with a classification question. 
+For all optimized models tested, Loss was steadily over 0.50 and accuracy stuck close to 0.71. More hidden layers and more neurons did not provide us with any significant results. On the contrary, a small number of layers featuring a small number of neurons turned out to be as accurate and slightly faster than our more complex models. This possibly signifies there is much more work to be done in reprocessing. The removal of the extra columns in optimization did not contribute to better results. Shuffling the activation functions did not result to much either. Hyperparameters appear to be irrelevant to our performance results and focus should shift to preprocessing.  Before going back to the drawing table to build new neural networks I would recommend attempting to achieve better performance with the Balanced Random Forest Classifier as we are dealing with a classification question. 
 
 
                                                                    
